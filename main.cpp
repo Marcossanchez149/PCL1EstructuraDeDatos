@@ -1,18 +1,18 @@
-// #include "Controlador.hpp"
+#include "Controlador.hpp"
 #include <iostream>
 using namespace std;
 
 int main(int argc, char** argv)
 {
-	// Controlador controlador;
+	Controlador controlador;
 	char opcion;
 
 	do {
 
 		cout << "\n\t----------------------------------------------------------------------\n";
-		cout << "\tPacientes en la pila -> " << 0 /*controlador.pacientesEnPila()*/ << "\n\tPacientes en las colas:\n \t\tSala A-> " << 0 /*controlador.pacientesEnSalaA()*/ << "\tSala B-> "
-             << 0 /*controlador.pacientesEnSalaB()*/ << "\tSala C-> " << 0 /*controlador.pacientesEnSalaC()*/ << "\tSala D-> " << 0 /*controlador.pacientesEnSalaD()*/
-             << " \n\tPacientes en las listas:\n \t\tQuirofano Apendicitis-> " << 0 /*controlador.pacientesEnListaApendicitis()*/ << "\tQuirofano hernias-> " << 0 /*controlador.pacientesEnListaHernias()*/
+		cout << "\tPacientes en la pila -> " << 0 controlador.pacientesEnPila() << "\n\tPacientes en las colas:\n \t\tSala A-> " << 0 controlador.pacientesEnSalaA() << "\tSala B-> "
+             << 0 controlador.pacientesEnSalaB() << "\tSala C-> " << 0 controlador.pacientesEnSalaC() << "\tSala D-> " << 0 controlador.pacientesEnSalaD()
+             << " \n\tPacientes en las listas:\n \t\tQuirofano Apendicitis-> " << 0 controlador.pacientesEnListaApendicitis() << "\tQuirofano hernias-> " << 0 controlador.pacientesEnListaHernias()
              << "\n\tPacientes en el arbol -> " << 0 /*controlador.pacientesEnArbol()*/ << "\n";
         cout << "\t----------------------------------------------------------------------\n\n";
 
@@ -50,40 +50,40 @@ int main(int argc, char** argv)
 		switch(opcion) {
 
 		case 'A':
-			// controlador.genera12Pacientes();
+			controlador.genera12Pacientes();
 			break;
 		case 'B':
-			// controlador.muestraPacientes()
+			controlador.muestraPacientes()
 			break;
 		case 'C':
-			// controlador.borraPacientesPila();
+			controlador.borraPacientesPila();
 			break;
 		case 'D':
-			// controlador.encolarPacientes();
+			controlador.encolarPacientes();
 			break;
 		case 'E':
-			// controlador.muestraPacientesSalasAyB();
+			controlador.muestraPacientesSalasAyB();
 			break;
 		case 'F':
-			// controlador.muestraPacientesSalasCyD();
+			controlador.muestraPacientesSalasCyD();
 			break;
 		case 'G':
-			// controlador.borraPacientesColas();
+			controlador.borraPacientesColas();
 			break;
 		case 'H':
-			// controlador.enlistarPacientes();
+			controlador.enlistarPacientes();
 			break;
 		case 'I':
-			// controlador.muestraPacientesApendicitis();
+			controlador.muestraPacientesApendicitis();
 			break;
 		case 'J':
-			// controlador.muestraPacientesHernias();
+			controlador.muestraPacientesHernias();
 			break;
 		case 'K':
-			// controlador.buscarPacientes();
+			controlador.buscarPacientes();
 			break;
 		case 'L':
-			// controlador.reiniciar();
+			controlador.reiniciar();
 			break;
 		case 'M':
 			//...;
